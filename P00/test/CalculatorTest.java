@@ -16,7 +16,35 @@ public class CalculatorTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		//Arrange
+		int a = 4321;
+		int b = 1234;
+		Calculator cal = new Calculator();
+		
+		//Act
+		int actual = cal.add(a, b);
+		
+		//Assert
+		int expected = 5555;
+		assertEquals (expected ,actual);	
+		
+	}
+	@Test
+	public void testSubtract() {
+		//Arrange
+		int a = 9876;
+		int b = 4321;
+		Calculator cal = new Calculator();
+		
+		//Act
+		int actual = cal.subtract(a,b);
+		
+		//Assert
+		int expected = 5;
+		assertEquals (expected,actual);		
+		
+		
+	
 	}
 
 }
